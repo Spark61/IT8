@@ -12,12 +12,10 @@ public class Mittelwert0 {
         while (input != 0) {
             input = scanner.nextInt();
 
-            if (input != 0) {
-                count++;
-                sum += input;
-            }
+            sum += input;
+            if (input != 0) count++;
         }
 
-        System.out.println("Der Mittelwert der " + count + " Zahlen ist:" + sum / count);
+        System.out.println("Der Mittelwert der " + count + " Zahlen ist: " + (float) sum / count);
     }
 }
