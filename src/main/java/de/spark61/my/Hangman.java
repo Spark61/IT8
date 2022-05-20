@@ -69,7 +69,8 @@ public class Hangman {
     private void finish(final boolean success) {
         this.started = false;
 
-        System.out.println("End: " + success);
+        if (success) System.out.println("Gewonnen!");
+        else System.out.println("Verloren!");
     }
 
     private void checkEnd() {
